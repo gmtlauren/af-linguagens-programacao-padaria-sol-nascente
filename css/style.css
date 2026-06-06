@@ -1,0 +1,249 @@
+/* <!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Padaria - Sol-Nascente
+Aluno 1: Lauren Gambacorta - RA: 250782
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+--> */
+
+/* CORES */
+
+:root {
+--amarelo-principal: #e8b923;
+--amarelo-claro: #f8e08c;
+--marrom: #4a3326;
+--creme: #fffaf1;
+--cinza: #5f5f5f;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* GERAL */
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: var(--creme);
+color: var(--marrom);
+line-height: 1.7;
+}
+
+/* HOME */
+
+.acoes-home{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 60px 0;
+}
+
+.acao-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* TÍTULOS */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+font-family: 'Playfair Display', serif;
+color: var(--marrom);
+font-weight: 700;
+}
+
+/* NAVBAR */
+
+.navbar {
+background: linear-gradient(90deg,#3f2b1f,#6a4c38) !important;
+box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+font-size: 1.5rem;
+letter-spacing: 1px;
+}
+
+.nav-link {
+transition: 0.3s;
+}
+
+.nav-link:hover {
+color: var(--amarelo-principal) !important;
+}
+
+/* CARROSSEL */
+
+.carousel img {
+height: 600px;
+object-fit: cover;
+filter: brightness(75%);
+}
+
+/* APRESENTAÇÃO */
+
+main section {
+animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+from{
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+to{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+
+/* QUEM SOMOS */
+
+section p {
+font-size: 1.05rem;
+}
+
+/* CARDS */
+
+.card {
+border: none;
+border-radius: 18px;
+overflow: hidden;
+transition: 0.4s;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+
+.card img {
+height: 250px;
+object-fit: cover;
+}
+
+.card-title {
+color: var(--marrom);
+}
+
+/* BOTÕES */
+
+.btn-warning {
+
+background-color: var(--amarelo-principal);
+border: none;
+color: var(--marrom);
+font-weight: 600;
+transition: 0.3s;
+}
+
+.btn-warning:hover {
+background-color: #d6a70f;
+color: white;
+transform: scale(1.05);
+}
+
+.btn-dark {
+background-color: var(--marrom);
+border: none;
+}
+
+.btn-dark:hover {
+transform: scale(1.05);
+}
+
+/* FORMULÁRIO */
+
+form {
+background-color: white; 
+border-radius: 20px;
+}
+
+.form-control,
+.form-select {
+border-radius: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+border-color: var(--amarelo-principal);
+box-shadow: 0 0 0 0.2rem rgba(232,185,35,0.25);
+}
+
+/* MAPA */
+
+iframe {
+border-radius: 20px;
+box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* REDES SOCIAIS */
+
+.btn-outline-dark:hover {
+background-color: var(--amarelo-principal);
+border-color: var(--amarelo-principal);
+color: var(--marrom);
+}
+
+/* RODAPÉ */
+
+footer {
+background: linear-gradient(90deg,#3f2b1f,#6a4c38);
+margin-top: 40px;
+}
+
+footer p {
+margin-bottom: 5px;
+}
+
+/* BOTÃO TOPO */
+
+.btn-outline-secondary {
+border-radius: 30px;
+padding: 10px 20px;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+
+section h2 {
+position: relative;
+display: inline-block;
+padding-bottom: 10px;
+}
+
+section h2::after {
+content: "";
+position: absolute;
+width: 60%;
+height: 4px;
+left: 20%;
+bottom: 0;
+background-color: var(--amarelo-principal);
+border-radius: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:768px) {
+.carousel img {height: 300px}
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+}

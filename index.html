@@ -1,0 +1,260 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Padaria - Sol-Nascente
+Aluno 1: Lauren Gambacorta - RA: 250782
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Sol-Nascente - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+    ```
+
+    </head>
+
+    <body id="topo">
+
+
+        <!-- MENU -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        ☀️ Sol-Nascente
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Início</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- CARROSSEL -->
+            <section>
+                <div id="carouselPadaria" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPadaria" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselPadaria" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselPadaria" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="img/pao_frances.avif" class="d-block w-100" alt="Pão Francês">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/doces_padaria.jpeg" class="d-block w-100" alt="Doces">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/cafes_diversos.jpeg" class="d-block w-100" alt="Cafés">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPadaria"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPadaria"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+            </section>
+
+            <!-- APRESENTAÇÃO -->
+            <section class="container py-5 mt-5">
+                <h1 class="text-center mb-4">
+                    Bem-vindo à Padaria Sol-Nascente
+                </h1>
+
+                <p class="text-center fs-5">
+                    Tradição, qualidade e sabor em cada receita.
+                    Produzimos diariamente pães, bolos, doces e cafés
+                    especiais para tornar o seu dia mais saboroso.
+                </p>
+            </section>
+
+            <!-- QUEM SOMOS -->
+            <section class="container py-5">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6">
+                        <h2>Quem Somos</h2>
+
+                        <p>
+                            A Padaria Sol-Nascente nasceu com o objetivo de oferecer
+                            produtos frescos e artesanais para toda a comunidade.
+                            Nossa equipe trabalha diariamente para garantir qualidade,
+                            atendimento acolhedor e receitas que unem tradição e inovação.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="img/interior_padaria.jpeg" class="img-fluid rounded" alt="Interior da padaria">
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PRODUTOS DESTAQUE -->
+            <section class="container py-5">
+                <h2 class="text-center mb-5">
+                    Produtos Mais Vendidos
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/pao_frances.avif" class="card-img-top" alt="Pão francês">
+                            <div class="card-body">
+                                <h5 class="card-title">Pão Francês</h5>
+                                <p class="card-text">
+                                    Crocante por fora e macio por dentro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/bolo_de_chocolate.webp" class="card-img-top" alt="Bolo caseiro">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolo Caseiro</h5>
+                                <p class="card-text">
+                                    Receitas tradicionais para toda a família.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/capuccino.jpg" class="card-img-top" alt="Café especial">
+                            <div class="card-body">
+                                <h5 class="card-title">Café Especial</h5>
+                                <p class="card-text">
+                                    Aroma intenso e sabor marcante.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTADOR -->
+                <section class="contador-clientes text-center my-5">
+
+                    <h2 id="contador">0</h2>
+
+                    <p>Clientes atendidos</p>
+
+                    <button id="btnContador" class="btn btn-warning">
+                        Ver Estatística
+                    </button>
+                     <p>Obrigado pela confiança em nosso trabalho!</p>
+            </section>
+
+            <!-- CHAMADA GALERIA -->
+            <section class="acoes-home">
+                <div class="acao-item">
+                    <h2>Conheça todos os nossos produtos</h2>
+
+                    <a href="galeria.html" class="btn btn-dark btn-lg">
+                        Ver Galeria
+                    </a>
+                </div>
+            <!-- CHAMADA CONTATO -->
+            <section class="container text-center py-5">
+                <h2>Entre em contato conosco</h2>
+
+                <div class="mt-4">
+                    <a href="contato.html" class="btn btn-dark btn-lg">
+                        Fale Conosco
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- BOTÃO TOPO -->
+        <div class="text-center mb-4">
+            <a href="#topo" class="btn btn-outline-secondary">
+                ↑ Voltar ao Topo
+            </a>
+        </div>
+
+        <!-- RODAPÉ -->
+        <footer class="bg-dark text-white text-center py-4">
+
+            <p class="mb-1">
+                Padaria Sol-Nascente
+            </p>
+
+            <p class="mb-0">
+            <p>Lauren Gambacorta - RA: 250782</p>
+            <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
+            <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+
+            </p>
+
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- JavaScript -->
+        <script src="./js/script.js"></script>
+        ```
+
+    </body>
+
+</html>
